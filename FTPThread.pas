@@ -10,7 +10,7 @@ uses
   {$IFDEF WINDOWS}
     LCLIntf, LCLType,
   {$ENDIF}
-  Classes, SysUtils, blcksock, synsock, synautil, fileutil;
+  Classes, SysUtils, blcksock, synsock, synautil, LazFileUtils;
 
 type
   FTPStatusEvent = procedure(Status: String) of Object;

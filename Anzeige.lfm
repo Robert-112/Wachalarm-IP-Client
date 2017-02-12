@@ -1,0 +1,193 @@
+object Frm_Anzeige: TFrm_Anzeige
+  Cursor = crNone
+  Left = 419
+  Height = 599
+  Top = 117
+  Width = 536
+  BorderStyle = bsNone
+  Caption = 'Frm_Anzeige'
+  ClientHeight = 599
+  ClientWidth = 536
+  Color = clBlack
+  OnCreate = FormCreate
+  OnDblClick = FormDblClick
+  OnKeyPress = FormKeyPress
+  OnResize = FormResize
+  ParentBiDiMode = False
+  ShowInTaskBar = stNever
+  LCLVersion = '1.6.2.0'
+  WindowState = wsMaximized
+  object I_Alarmbild: TImage
+    Cursor = crNone
+    Left = 0
+    Height = 34
+    Top = 0
+    Width = 50
+    AntialiasingMode = amOn
+    OnDblClick = I_AlarmbildDblClick
+    Visible = False
+  end
+  object Panel_AllePanels: TPanel
+    Left = 0
+    Height = 599
+    Top = 0
+    Width = 536
+    Align = alClient
+    BevelOuter = bvNone
+    ClientHeight = 599
+    ClientWidth = 536
+    TabOrder = 0
+    OnDblClick = Panel_AllePanelsDblClick
+    object Panel_Zeit: TPanel
+      AnchorSideLeft.Control = Panel_AllePanels
+      AnchorSideTop.Control = Panel_AllePanels
+      AnchorSideRight.Control = Panel_AllePanels
+      AnchorSideRight.Side = asrBottom
+      Cursor = crNone
+      Left = 0
+      Height = 416
+      Top = 0
+      Width = 536
+      Anchors = [akTop, akLeft, akRight]
+      BevelOuter = bvNone
+      ClientHeight = 416
+      ClientWidth = 536
+      TabOrder = 1
+      OnDblClick = Panel_ZeitDblClick
+      object Panel_L_Clock: TPanel
+        AnchorSideLeft.Control = Panel_Zeit
+        AnchorSideTop.Control = Panel_Zeit
+        AnchorSideRight.Control = Panel_Zeit
+        AnchorSideRight.Side = asrBottom
+        Cursor = crNone
+        Left = 0
+        Height = 266
+        Top = 0
+        Width = 536
+        Anchors = [akTop, akLeft, akRight]
+        BevelOuter = bvNone
+        ClientHeight = 266
+        ClientWidth = 536
+        TabOrder = 0
+        OnDblClick = Panel_L_ClockDblClick
+        OnResize = Panel_L_ClockResize
+        object L_Clock: TLabel
+          Cursor = crNone
+          Left = 0
+          Height = 266
+          Top = 0
+          Width = 536
+          Align = alClient
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'L_Clock'
+          Font.Color = clWhite
+          Font.Quality = fqAntialiased
+          Font.Style = [fsBold]
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          OnDblClick = L_ClockDblClick
+        end
+      end
+      object Panel_L_Date: TPanel
+        AnchorSideLeft.Control = Panel_L_Clock
+        AnchorSideTop.Control = Panel_L_Clock
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = Panel_L_Clock
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = Panel_Zeit
+        AnchorSideBottom.Side = asrBottom
+        Cursor = crNone
+        Left = 0
+        Height = 150
+        Top = 266
+        Width = 536
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        BevelOuter = bvNone
+        ClientHeight = 150
+        ClientWidth = 536
+        TabOrder = 1
+        OnDblClick = Panel_L_DateDblClick
+        OnResize = Panel_L_DateResize
+        object L_LongDate: TLabel
+          Cursor = crNone
+          Left = 0
+          Height = 150
+          Top = 0
+          Width = 536
+          Align = alClient
+          Alignment = taCenter
+          AutoSize = False
+          Caption = 'L_LongDate'
+          Font.Color = clWhite
+          Font.Quality = fqAntialiased
+          Layout = tlCenter
+          ParentColor = False
+          ParentFont = False
+          OnDblClick = L_LongDateDblClick
+        end
+      end
+    end
+    object Panel_Infotext: TPanel
+      AnchorSideLeft.Control = Panel_Zeit
+      AnchorSideTop.Control = Panel_Zeit
+      AnchorSideTop.Side = asrBottom
+      AnchorSideRight.Control = Panel_Zeit
+      AnchorSideRight.Side = asrBottom
+      AnchorSideBottom.Control = Panel_AllePanels
+      AnchorSideBottom.Side = asrBottom
+      Cursor = crNone
+      Left = 0
+      Height = 183
+      Top = 416
+      Width = 536
+      Anchors = [akTop, akLeft, akRight, akBottom]
+      BevelOuter = bvNone
+      ClientHeight = 183
+      ClientWidth = 536
+      TabOrder = 0
+      OnDblClick = Panel_InfotextDblClick
+      OnResize = Panel_InfotextResize
+      object L_Infotext: TLabel
+        AnchorSideRight.Side = asrBottom
+        Cursor = crNone
+        Left = 0
+        Height = 183
+        Top = 0
+        Width = 536
+        Align = alClient
+        Anchors = []
+        AutoSize = False
+        Caption = 'L_Infotext'#13#10'Zeile 2 von 3'#13#10'Zeile 3 von 3'
+        Font.Color = 8257535
+        Font.Height = 64
+        Font.Quality = fqAntialiased
+        Font.Style = [fsBold]
+        Layout = tlCenter
+        ParentColor = False
+        ParentFont = False
+        WordWrap = True
+        OnDblClick = L_InfotextDblClick
+        OptimalFill = True
+      end
+    end
+  end
+  object Timer_AktuelleUhrzeit: TTimer
+    OnTimer = Timer_AktuelleUhrzeitTimer
+    left = 160
+    top = 344
+  end
+  object Timer_UhrVerschieben: TTimer
+    Interval = 300000
+    OnTimer = Timer_UhrVerschiebenTimer
+    left = 96
+    top = 296
+  end
+  object Timer_Infotextanzeigen: TTimer
+    Enabled = False
+    OnTimer = Timer_InfotextanzeigenTimer
+    left = 224
+    top = 296
+  end
+end

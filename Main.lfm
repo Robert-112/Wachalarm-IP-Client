@@ -293,8 +293,8 @@ object Frm_Main: TFrm_Main
           Left = 105
           Height = 15
           Top = 72
-          Width = 49
-          Caption = 'Client 2.8'
+          Width = 58
+          Caption = 'Client 2.8.1'
           ParentColor = False
         end
         object Image1: TImage

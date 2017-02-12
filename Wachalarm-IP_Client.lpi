@@ -18,8 +18,6 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
       <MinorVersionNr Value="8"/>
-      <RevisionNr Value="0"/>
-      <BuildNr Value="0"/>
       <Language Value="0407"/>
       <StringTable ProductVersion=""/>
     </VersionInfo>
@@ -41,7 +39,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="6">
+    <Units Count="7">
       <Unit0>
         <Filename Value="Wachalarm-IP_Client.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -55,7 +53,6 @@
         <ComponentName Value="Frm_Main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="331"/>
         <CursorPos X="55" Y="368"/>
         <UsageCount Value="210"/>
@@ -68,9 +65,11 @@
         <ComponentName Value="Frm_Anzeige"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="-1"/>
+        <EditorIndex Value="1"/>
         <CursorPos X="19" Y="122"/>
         <UsageCount Value="210"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="Splash.pas"/>
@@ -100,9 +99,11 @@
       <Unit6>
         <Filename Value="FTPThread.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="27" Y="15"/>
-        <UsageCount Value="22"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="63" Y="13"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit6>
     </Units>
     <JumpHistory Count="20" HistoryIndex="19">

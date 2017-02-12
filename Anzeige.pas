@@ -153,6 +153,8 @@ procedure TFrm_Anzeige.Zeit_und_Infotext_anzeigen(Minuten: integer; Infotext: St
 begin
   if Minuten <> 0 then
   begin
+    // Timer zurücksetzen
+    Frm_Anzeige.Timer_Infotextanzeigen.Enabled := false;
     // Fläche für Uhrzeit anpassen
     Frm_Anzeige.Panel_Zeit.Height := Round(Frm_Anzeige.Panel_AllePanels.Height * 0.62);
     // Uhrzeit und Datum verteilen

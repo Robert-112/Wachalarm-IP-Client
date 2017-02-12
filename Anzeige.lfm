@@ -9,6 +9,7 @@ object Frm_Anzeige: TFrm_Anzeige
   ClientHeight = 599
   ClientWidth = 536
   Color = clBlack
+  FormStyle = fsStayOnTop
   OnCreate = FormCreate
   OnDblClick = FormDblClick
   OnKeyPress = FormKeyPress

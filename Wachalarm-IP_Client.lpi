@@ -18,8 +18,8 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
       <MinorVersionNr Value="8"/>
-      <RevisionNr Value="1"/>
-      <BuildNr Value="1"/>
+      <RevisionNr Value="0"/>
+      <BuildNr Value="0"/>
       <Language Value="0407"/>
       <StringTable ProductVersion=""/>
     </VersionInfo>
@@ -41,7 +41,7 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="8">
+    <Units Count="6">
       <Unit0>
         <Filename Value="Wachalarm-IP_Client.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -56,7 +56,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="39" Y="26"/>
+        <TopLine Value="331"/>
+        <CursorPos X="55" Y="368"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -67,10 +68,9 @@
         <ComponentName Value="Frm_Anzeige"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="2"/>
-        <CursorPos X="53" Y="161"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="19" Y="122"/>
         <UsageCount Value="210"/>
-        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="Splash.pas"/>
@@ -98,23 +98,14 @@
         <DefaultSyntaxHighlighter Value="LFM"/>
       </Unit5>
       <Unit6>
-        <Filename Value="C:\lazarus\lcl\grids.pas"/>
-        <UnitName Value="Grids"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="11897"/>
-        <CursorPos Y="11932"/>
-        <UsageCount Value="10"/>
-      </Unit6>
-      <Unit7>
         <Filename Value="FTPThread.pas"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="3"/>
-        <CursorPos X="63" Y="13"/>
-        <UsageCount Value="10"/>
-        <Loaded Value="True"/>
-      </Unit7>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="27" Y="15"/>
+        <UsageCount Value="22"/>
+      </Unit6>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="20" HistoryIndex="19">
       <Position1>
         <Filename Value="Main.pas"/>
         <Caret Line="398" Column="79" TopLine="368"/>
@@ -195,45 +186,6 @@
         <Filename Value="Main.pas"/>
         <Caret Line="154" Column="45" TopLine="128"/>
       </Position20>
-      <Position21>
-        <Filename Value="Main.pas"/>
-        <Caret Line="362" Column="36" TopLine="331"/>
-      </Position21>
-      <Position22>
-        <Filename Value="Main.pas"/>
-        <Caret Line="604" TopLine="502"/>
-      </Position22>
-      <Position23>
-        <Filename Value="Main.pas"/>
-        <Caret Line="214" TopLine="194"/>
-      </Position23>
-      <Position24>
-        <Filename Value="Main.pas"/>
-        <Caret Line="604" Column="25" TopLine="570"/>
-      </Position24>
-      <Position25>
-        <Filename Value="Main.pas"/>
-        <Caret Line="1095" Column="53" TopLine="1086"/>
-      </Position25>
-      <Position26>
-        <Filename Value="Main.pas"/>
-        <Caret Line="1130" Column="51" TopLine="1104"/>
-      </Position26>
-      <Position27>
-        <Filename Value="Main.pas"/>
-        <Caret Line="159" Column="69" TopLine="116"/>
-      </Position27>
-      <Position28>
-        <Filename Value="Main.pas"/>
-        <Caret Line="160" Column="45" TopLine="134"/>
-      </Position28>
-      <Position29>
-        <Filename Value="Main.pas"/>
-        <Caret Line="832" Column="64" TopLine="798"/>
-      </Position29>
-      <Position30>
-        <Filename Value="FTPThread.pas"/>
-      </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -249,19 +201,15 @@
     </SearchPaths>
     <CodeGeneration>
       <SmartLinkUnit Value="True"/>
-      <Checks>
-        <IOChecks Value="True"/>
-        <RangeChecks Value="True"/>
-        <StackChecks Value="True"/>
-      </Checks>
-      <VerifyObjMethodCallValidity Value="True"/>
     </CodeGeneration>
     <Linking>
       <Debugging>
         <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsStabs"/>
         <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
       </Debugging>
+      <LinkSmart Value="True"/>
       <Options>
         <Win32>
           <GraphicApplication Value="True"/>

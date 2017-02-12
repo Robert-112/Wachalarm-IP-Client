@@ -156,7 +156,8 @@ Type
     procedure Memo_EM_TTSEditingDone(Sender: TObject);
     procedure Memo_LogChange(Sender: TObject);
     procedure SG_ZeitkriterienEditingDone(Sender: TObject);
-    procedure SG_ZeitkriterienKeyDown(Sender: TObject; var Key: Word);
+    procedure SG_ZeitkriterienKeyDown(Sender: TObject; var Key: Word;
+      Shift: TShiftState);
     procedure SG_ZeitkriterienValidateEntry(sender: TObject; aCol,
       aRow: Integer; const OldValue: string; var NewValue: String);
     procedure SP_Alarmbild_DauerChange(Sender: TObject);
@@ -195,8 +196,8 @@ var
 implementation
 
 {$R *.lfm}
-{$R credentials.res}
-{$R sounds.res}
+{$R credentials.RES}
+{$R sounds.RES}
 
 {==============================================================================}
 {=========== TFrm_Main ========================================================}
@@ -600,7 +601,7 @@ begin
       Delete(Einsatzmittel, 1, length(Funkkenner) + 1);
     until Einsatzmittel = '';
     // Sound für Sondersignal setzen
-    if Sondersignal = '[mit Sondersignal]' then
+    if Sondersignal = 'mit Sondersignal' then
     begin
       Text_to_Play := Text_to_Play + 'mit Sondersignal;';
       Sounds_to_Play := Sounds_to_Play + '13,'
@@ -821,7 +822,8 @@ begin
   SaveStringGrid(Dir + Slash + 'config.ini',SG_Zeitkriterien);
 end;
 
-procedure TFrm_Main.SG_ZeitkriterienKeyDown(Sender: TObject; var Key: Word);
+procedure TFrm_Main.SG_ZeitkriterienKeyDown(Sender: TObject; var Key: Word;
+  Shift: TShiftState);
 begin
 if (Key = VK_DELETE) then
   begin
@@ -1090,7 +1092,7 @@ begin
       if LeftStr(UDP_Text, 10) = 'ANWEISUNG-' then
       begin
         // Ist die Anweisung autorisiert?
-        if LeftStr(UDP_Text, pos('~~', UDP_Text) + 1) <> 'ANWEISUNG-' + User + '|' + Pass + '~~' then
+        if LeftStr(UDP_Text, pos('~~', UDP_Text) + 2) <> 'ANWEISUNG-' + User + '|' + Pass + '~~' then
           Log_schreiben('Log', 'FEHLER - ANWEISUNG (UDP) nicht autorisiert! ' + #39 + UDP_Text + #39)
         else
         begin
@@ -1121,14 +1123,14 @@ begin
           if LeftStr(UDP_Text, 5) = 'INFO:' then
           begin
             // BSP: 'ANWEISUNG-INFO:5;Informationstext'
-            UDP_Text := StringReplace(UDP_Text, 'INFO:', '', []);
+            UDP_Text := StringReplace(UDP_Text, 'ANWEISUNG-INFO:', '', []);
             // Minuten für Anzeigedauer aus String extrahieren, falls nicht vorhanden 0 setzen
             Minuten := StrToIntDef(LeftStr(UDP_Text, pos(';', UDP_Text)-1), 0);
             Delete(UDP_Text, 1, pos(';', UDP_Text));
             Frm_Anzeige.Zeit_und_Infotext_anzeigen(Minuten, UDP_Text);
             Log_schreiben('Log', 'ANWEISUNG-INFO erhalten (UDP), zeige ' + #39 + UDP_Text + #39 + ' für ' + IntToStr(Minuten) + ' Minuten an');
           end;
-          if LeftStr(UDP_Text, 6) = 'UPDATE' then
+          if LeftStr(UDP_Text, 7) = 'UPDATE:' then
           begin
             // BSP: 'ANWEISUNG-UPDATE'
             Log_schreiben('Log', 'ANWEISUNG-UPDATE erhalten (UDP), starte Update-Prozess');

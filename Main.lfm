@@ -293,8 +293,8 @@ object Frm_Main: TFrm_Main
           Left = 105
           Height = 15
           Top = 72
-          Width = 58
-          Caption = 'Client 2.8.1'
+          Width = 49
+          Caption = 'Client 2.8'
           ParentColor = False
         end
         object Image1: TImage
@@ -773,12 +773,12 @@ object Frm_Main: TFrm_Main
     end
     object TB_Config: TTabSheet
       Caption = 'Einstellungen'
-      ClientHeight = 419
+      ClientHeight = 394
       ClientWidth = 692
       ImageIndex = 12
       object PC_Config: TPageControl
         Left = 0
-        Height = 419
+        Height = 394
         Top = 0
         Width = 692
         ActivePage = TB_Anzeige
@@ -787,17 +787,17 @@ object Frm_Main: TFrm_Main
         TabOrder = 0
         object TB_Anzeige: TTabSheet
           Caption = 'Bildschirmanzeige'
-          ClientHeight = 391
+          ClientHeight = 366
           ClientWidth = 684
           object GroupBox2: TGroupBox
             Left = 0
-            Height = 391
+            Height = 366
             Top = 0
             Width = 684
             Align = alClient
             Anchors = [akTop, akLeft, akRight]
             Caption = 'Anzeige'
-            ClientHeight = 371
+            ClientHeight = 346
             ClientWidth = 680
             TabOrder = 0
             object CB_Show_Alarmbild: TCheckBox

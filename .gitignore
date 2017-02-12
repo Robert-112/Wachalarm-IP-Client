@@ -27,6 +27,7 @@ backup/
 lib/
 config/
 data/
+_ressourcen/
 
 # Application bundle for Mac OS
 *.app/

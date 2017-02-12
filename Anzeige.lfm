@@ -1,14 +1,15 @@
 object Frm_Anzeige: TFrm_Anzeige
   Cursor = crNone
-  Left = 419
+  Left = 702
   Height = 599
-  Top = 117
+  Top = 157
   Width = 536
   BorderStyle = bsNone
   Caption = 'Frm_Anzeige'
   ClientHeight = 599
   ClientWidth = 536
   Color = clBlack
+  FormStyle = fsStayOnTop
   OnCreate = FormCreate
   OnDblClick = FormDblClick
   OnKeyPress = FormKeyPress

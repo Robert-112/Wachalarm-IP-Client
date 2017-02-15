@@ -351,7 +351,7 @@ object Frm_Main: TFrm_Main
           Width = 58
           BorderSpacing.Left = 90
           BorderSpacing.Top = 75
-          Caption = 'Client 2.8.1'
+          Caption = 'Client 2.8.2'
           ParentColor = False
         end
         object Image1: TImage

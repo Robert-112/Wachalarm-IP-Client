@@ -15,7 +15,7 @@ uses
   LResources, Grids, inifiles, FTPThread, blcksock, synsock, Anzeige,
   Funktionen;
 
-{ UDP-Server Thread Deklaration}  
+{ UDP-Server Thread Deklaration }  
 
 Type
   UDP_TShowStatusEvent = procedure(UDP_Status: String) of Object;
@@ -32,7 +32,7 @@ Type
     property UDP_OnShowStatus: UDP_TShowStatusEvent read UDP_FOnShowStatus write UDP_FOnShowStatus;
   end;
 
-{ FTP-Server Thread Deklaration}    
+{ FTP-Server Thread Deklaration }    
 
 Type
   FTP_TShowStatusEvent = procedure(Status: String) of Object;
@@ -393,6 +393,7 @@ begin
     if Anzeigedauer = SP_Alarmbild_Dauer.Value * 60000 then
     begin
       Frm_Anzeige.I_Alarmbild.Hide;
+      Frm_Anzeige.Panel_AllePanels.Show;
       //Wenn keine Digitaluhr gesetzt ist, dann gesamte ANZEIGE wieder ausblenden
       if Frm_Main.CB_Show_Clock.Checked = false then
         Frm_Anzeige.Hide
@@ -404,7 +405,6 @@ begin
           Frm_Main.FormCloseQuery(Sender,CanClose);
           Frm_Anzeige.Show;
           Frm_Anzeige.WindowState := wsMaximized;
-          Frm_Anzeige.Panel_AllePanels.Show;
         end;
       end;
       Bild_wird_angezeigt := false;

@@ -237,10 +237,10 @@ object Frm_Main: TFrm_Main
           Left = 10
           Height = 15
           Top = 70
-          Width = 30
+          Width = 95
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
-          Caption = 'Ports:'
+          Caption = 'Ports / Protokolle:'
           ParentColor = False
         end
         object Label14: TLabel
@@ -249,10 +249,10 @@ object Frm_Main: TFrm_Main
           Left = 150
           Height = 15
           Top = 70
-          Width = 179
+          Width = 214
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
-          Caption = '60132 UDP; 60143 TCP; 60144 TCP;'
+          Caption = '60132 UDP; 60143 TCP; 60144 TCP; ICMP;'
           ParentColor = False
         end
         object L_Server_IP: TLabel

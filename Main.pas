@@ -82,6 +82,8 @@ Type
     I_Alarmbild: TImage;
     Label1: TLabel;
     Label10: TLabel;
+    Label11: TLabel;
+    L_Weblink: TLabel;
     L_Version: TLabel;
     Label12: TLabel;
     Label13: TLabel;
@@ -152,6 +154,7 @@ Type
     procedure CB_Show_ClockChange(Sender: TObject);
     procedure CB_Show_PopUpChange(Sender: TObject);
     procedure FormDblClick(Sender: TObject);
+    procedure L_WeblinkClick(Sender: TObject);
     procedure Memo_ChronikChange(Sender: TObject);
     procedure Memo_EM_TTSEditingDone(Sender: TObject);
     procedure Memo_LogChange(Sender: TObject);
@@ -790,6 +793,11 @@ end;
 procedure TFrm_Main.FormDblClick(Sender: TObject);
 begin
   Frm_Anzeige.Hide;
+end;
+
+procedure TFrm_Main.L_WeblinkClick(Sender: TObject);
+begin
+  OpenURL('https://github.com/Robert-112/Wachalarm-IP-Client');
 end;
 
 procedure TFrm_Main.Memo_ChronikChange(Sender: TObject);

@@ -179,130 +179,191 @@ object Frm_Main: TFrm_Main
       ClientWidth = 692
       ImageIndex = 6
       object GroupBox1: TGroupBox
+        AnchorSideLeft.Control = TB_Info
+        AnchorSideTop.Control = GroupBox4
+        AnchorSideTop.Side = asrBottom
+        AnchorSideRight.Control = TB_Info
+        AnchorSideRight.Side = asrBottom
+        AnchorSideBottom.Control = TB_Info
+        AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 251
-        Top = 168
+        Height = 219
+        Top = 200
         Width = 692
-        Align = alCustom
         Anchors = [akTop, akLeft, akRight, akBottom]
         Caption = 'Systemstatus'
-        ClientHeight = 231
+        ClientHeight = 199
         ClientWidth = 688
         TabOrder = 0
         object Label2: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = GroupBox1
+          Left = 10
           Height = 15
-          Top = 8
+          Top = 10
           Width = 96
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 10
           Caption = 'Lokale IP-Adresse:'
           ParentColor = False
         end
         object L_Local_IP: TLabel
-          Left = 144
+          AnchorSideLeft.Control = Label2
+          AnchorSideTop.Control = GroupBox1
+          Left = 150
           Height = 15
-          Top = 8
+          Top = 10
           Width = 72
+          BorderSpacing.Left = 140
+          BorderSpacing.Top = 10
           Caption = '<IP-Adresse>'
           ParentColor = False
         end
         object Label5: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = Label2
+          Left = 10
           Height = 15
           Top = 40
           Width = 94
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
           Caption = 'Server IP-Adresse:'
           ParentColor = False
         end
         object Label12: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = Label5
+          Left = 10
           Height = 15
-          Top = 72
+          Top = 70
           Width = 30
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
           Caption = 'Ports:'
           ParentColor = False
         end
         object Label14: TLabel
-          Left = 144
+          AnchorSideLeft.Control = Label12
+          AnchorSideTop.Control = L_Server_IP
+          Left = 150
           Height = 15
-          Top = 72
+          Top = 70
           Width = 179
+          BorderSpacing.Left = 140
+          BorderSpacing.Top = 30
           Caption = '60132 UDP; 60143 TCP; 60144 TCP;'
           ParentColor = False
         end
         object L_Server_IP: TLabel
-          Left = 144
+          AnchorSideLeft.Control = Label5
+          AnchorSideTop.Control = L_Local_IP
+          Left = 150
           Height = 15
           Top = 40
           Width = 57
+          BorderSpacing.Left = 140
+          BorderSpacing.Top = 30
           Caption = 'unbekannt'
           ParentColor = False
         end
         object Label6: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = Label15
+          Left = 10
           Height = 15
-          Top = 136
-          Width = 73
-          Caption = 'Letzter Alarm:'
+          Top = 130
+          Width = 70
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
+          Caption = 'letzter Alarm:'
           ParentColor = False
         end
         object L_LastUpload: TLabel
-          Left = 144
+          AnchorSideLeft.Control = Label6
+          AnchorSideTop.Control = L_LastServerMsg
+          Left = 150
           Height = 15
-          Top = 136
+          Top = 130
           Width = 57
+          BorderSpacing.Left = 140
+          BorderSpacing.Top = 30
           Caption = 'unbekannt'
           ParentColor = False
         end
         object Label15: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox1
+          AnchorSideTop.Control = Label12
+          Left = 10
           Height = 15
-          Top = 104
+          Top = 100
           Width = 103
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
           Caption = 'Server-Information:'
           ParentColor = False
         end
         object L_LastServerMsg: TLabel
-          Left = 144
+          AnchorSideLeft.Control = Label15
+          AnchorSideTop.Control = Label14
+          Left = 150
           Height = 15
-          Top = 104
+          Top = 100
           Width = 57
+          BorderSpacing.Left = 140
+          BorderSpacing.Top = 30
           Caption = 'unbekannt'
           ParentColor = False
         end
       end
       object GroupBox4: TGroupBox
+        AnchorSideLeft.Control = TB_Info
+        AnchorSideTop.Control = TB_Info
+        AnchorSideRight.Control = TB_Info
+        AnchorSideRight.Side = asrBottom
         Left = 0
-        Height = 150
+        Height = 200
         Top = 0
         Width = 692
-        Align = alCustom
         Anchors = [akTop, akLeft, akRight]
         Caption = 'Programminformationen'
-        ClientHeight = 130
+        ClientHeight = 180
         ClientWidth = 688
         TabOrder = 1
         object Label8: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox4
+          AnchorSideTop.Control = GroupBox4
+          Left = 10
           Height = 15
-          Top = 72
+          Top = 75
           Width = 41
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 75
           Caption = 'Version:'
           ParentColor = False
         end
         object L_Version: TLabel
-          Left = 105
+          AnchorSideLeft.Control = Label8
+          AnchorSideTop.Control = GroupBox4
+          Left = 100
           Height = 15
-          Top = 72
+          Top = 75
           Width = 58
+          BorderSpacing.Left = 90
+          BorderSpacing.Top = 75
           Caption = 'Client 2.8.1'
           ParentColor = False
         end
         object Image1: TImage
-          Left = 14
+          AnchorSideLeft.Control = GroupBox4
+          AnchorSideTop.Control = GroupBox4
+          Left = 10
           Height = 45
-          Top = 8
+          Top = 10
           Width = 264
           AutoSize = True
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 10
           Picture.Data = {
             1754506F727461626C654E6574776F726B47726170686963B737000089504E47
             0D0A1A0A0000000D49484452000001080000002D0802000000DD826299000000
@@ -754,31 +815,68 @@ object Frm_Main: TFrm_Main
           }
         end
         object Label13: TLabel
-          Left = 14
+          AnchorSideLeft.Control = GroupBox4
+          AnchorSideTop.Control = Label8
+          Left = 10
           Height = 15
-          Top = 96
+          Top = 105
           Width = 57
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
           Caption = 'Entwickler:'
           ParentColor = False
         end
         object Label3: TLabel
-          Left = 105
+          AnchorSideLeft.Control = Label13
+          AnchorSideTop.Control = L_Version
+          Left = 100
           Height = 15
-          Top = 96
+          Top = 105
           Width = 171
+          BorderSpacing.Left = 90
+          BorderSpacing.Top = 30
           Caption = 'Leitstelle Lausitz - Robert Richter'
           ParentColor = False
+        end
+        object Label11: TLabel
+          AnchorSideLeft.Control = GroupBox4
+          AnchorSideTop.Control = Label13
+          Left = 10
+          Height = 15
+          Top = 135
+          Width = 51
+          BorderSpacing.Left = 10
+          BorderSpacing.Top = 30
+          Caption = 'Webseite:'
+          ParentColor = False
+        end
+        object L_Weblink: TLabel
+          AnchorSideLeft.Control = Label11
+          AnchorSideTop.Control = Label3
+          Cursor = crHandPoint
+          Left = 100
+          Height = 15
+          Top = 135
+          Width = 281
+          BorderSpacing.Left = 90
+          BorderSpacing.Top = 30
+          Caption = 'https://github.com/Robert-112/Wachalarm-IP-Client'
+          Font.Color = clHighlight
+          Font.Style = [fsUnderline]
+          ParentColor = False
+          ParentFont = False
+          OnClick = L_WeblinkClick
         end
       end
     end
     object TB_Config: TTabSheet
       Caption = 'Einstellungen'
-      ClientHeight = 394
+      ClientHeight = 419
       ClientWidth = 692
       ImageIndex = 12
       object PC_Config: TPageControl
         Left = 0
-        Height = 394
+        Height = 419
         Top = 0
         Width = 692
         ActivePage = TB_Anzeige
@@ -787,24 +885,34 @@ object Frm_Main: TFrm_Main
         TabOrder = 0
         object TB_Anzeige: TTabSheet
           Caption = 'Bildschirmanzeige'
-          ClientHeight = 366
+          ClientHeight = 391
           ClientWidth = 684
           object GroupBox2: TGroupBox
+            AnchorSideLeft.Control = TB_Anzeige
+            AnchorSideTop.Control = TB_Anzeige
+            AnchorSideRight.Control = TB_Anzeige
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = TB_Anzeige
+            AnchorSideBottom.Side = asrBottom
             Left = 0
-            Height = 366
+            Height = 391
             Top = 0
             Width = 684
-            Align = alClient
-            Anchors = [akTop, akLeft, akRight]
+            Align = alCustom
+            Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Anzeige'
-            ClientHeight = 346
+            ClientHeight = 371
             ClientWidth = 680
             TabOrder = 0
             object CB_Show_Alarmbild: TCheckBox
-              Left = 14
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = GroupBox2
+              Left = 10
               Height = 19
-              Top = 8
+              Top = 10
               Width = 122
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 10
               Caption = 'Alarmbild anzeigen'
               Checked = True
               OnChange = CB_Show_AlarmbildChange
@@ -812,92 +920,126 @@ object Frm_Main: TFrm_Main
               TabOrder = 0
             end
             object CB_Show_Clock: TCheckBox
-              Left = 14
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = Label9
+              Left = 10
               Height = 19
-              Top = 168
+              Top = 175
               Width = 240
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 50
               Caption = 'Digitaluhr als Bildschirmschoner anzeigen'
               OnChange = CB_Show_ClockChange
               TabOrder = 1
             end
             object CB_Show_PopUp: TCheckBox
-              Left = 14
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = CB_Show_Clock
+              Left = 10
               Height = 19
-              Top = 200
+              Top = 215
               Width = 201
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 40
               Caption = 'Alarm als PopUp im Tray anzeigen'
               OnChange = CB_Show_PopUpChange
               TabOrder = 2
             end
             object Label7: TLabel
-              Left = 137
+              AnchorSideLeft.Control = L_Dauer
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = Label9
+              Left = 108
               Height = 15
-              Top = 120
+              Top = 125
               Width = 117
+              BorderSpacing.Left = 5
               Caption = 'Minute(n) auf Monitor'
               Font.Style = [fsItalic]
               ParentColor = False
               ParentFont = False
             end
             object L_Dauer: TLabel
-              Left = 104
+              AnchorSideLeft.Control = Label9
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = Label9
+              Left = 87
               Height = 16
-              Top = 119
+              Top = 125
               Width = 16
               Alignment = taCenter
               AutoSize = False
+              BorderSpacing.Left = 5
               Caption = '1'
               Font.Style = [fsBold, fsItalic]
               ParentColor = False
               ParentFont = False
             end
             object Label9: TLabel
-              Left = 32
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = Label4
+              Left = 30
               Height = 15
-              Top = 120
+              Top = 125
               Width = 52
+              BorderSpacing.Left = 30
+              BorderSpacing.Top = 50
               Caption = 'Alarmbild'
               Font.Style = [fsItalic]
               ParentColor = False
               ParentFont = False
             end
             object Label10: TLabel
-              Left = 304
+              AnchorSideLeft.Control = L_Monitor
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = Label9
+              Left = 251
               Height = 15
-              Top = 120
+              Top = 125
               Width = 48
+              BorderSpacing.Left = 5
               Caption = 'anzeigen'
               Font.Style = [fsItalic]
               ParentColor = False
               ParentFont = False
             end
             object L_Monitor: TLabel
-              Left = 272
+              AnchorSideLeft.Control = Label7
+              AnchorSideLeft.Side = asrBottom
+              AnchorSideTop.Control = Label9
+              Left = 230
               Height = 16
-              Top = 119
+              Top = 125
               Width = 16
               Alignment = taCenter
               AutoSize = False
+              BorderSpacing.Left = 5
               Caption = '1'
               Font.Style = [fsBold, fsItalic]
               ParentColor = False
               ParentFont = False
             end
             object SP_Alarmbild_Dauer: TSpinEdit
-              Left = 232
+              AnchorSideLeft.Control = Label1
+              AnchorSideTop.Control = Label1
+              Left = 250
               Height = 23
               Top = 40
               Width = 50
+              BorderSpacing.Left = 220
               MinValue = 1
               OnChange = SP_Alarmbild_DauerChange
               TabOrder = 3
               Value = 1
             end
             object SP_Alarmbild_Monitor: TSpinEdit
-              Left = 232
+              AnchorSideLeft.Control = Label4
+              AnchorSideTop.Control = Label4
+              Left = 250
               Height = 23
-              Top = 72
+              Top = 75
               Width = 50
+              BorderSpacing.Left = 220
               MinValue = 1
               OnChange = SP_Alarmbild_MonitorChange
               OnEditingDone = SP_Alarmbild_MonitorEditingDone
@@ -905,18 +1047,26 @@ object Frm_Main: TFrm_Main
               Value = 1
             end
             object Label1: TLabel
-              Left = 32
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = CB_Show_Alarmbild
+              Left = 30
               Height = 15
-              Top = 48
+              Top = 40
               Width = 100
+              BorderSpacing.Left = 30
+              BorderSpacing.Top = 30
               Caption = 'Dauer (in Minuten)'
               ParentColor = False
             end
             object Label4: TLabel
-              Left = 32
+              AnchorSideLeft.Control = GroupBox2
+              AnchorSideTop.Control = Label1
+              Left = 30
               Height = 15
-              Top = 80
+              Top = 75
               Width = 175
+              BorderSpacing.Left = 30
+              BorderSpacing.Top = 35
               Caption = 'Monitor (siehe Systemsteuerung)'
               ParentColor = False
             end
@@ -924,35 +1074,57 @@ object Frm_Main: TFrm_Main
         end
         object TB_Sound: TTabSheet
           Caption = 'Ton-Ausgabe'
-          ClientHeight = 366
+          ClientHeight = 391
           ClientWidth = 684
           object GroupBox5: TGroupBox
+            AnchorSideLeft.Control = TB_Sound
+            AnchorSideTop.Control = GroupBox3
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = TB_Sound
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = TB_Sound
+            AnchorSideBottom.Side = asrBottom
             Left = 0
-            Height = 257
-            Top = 104
+            Height = 291
+            Top = 100
             Width = 684
             Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Einschränkungen (Nachtruhe)'
-            ClientHeight = 237
+            ClientHeight = 271
             ClientWidth = 680
             TabOrder = 0
             object Label16: TLabel
-              Left = 14
+              AnchorSideLeft.Control = GroupBox5
+              AnchorSideTop.Control = GroupBox5
+              AnchorSideRight.Control = GroupBox5
+              AnchorSideRight.Side = asrBottom
+              Left = 10
               Height = 30
-              Top = 16
+              Top = 10
               Width = 573
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 10
+              BorderSpacing.Right = 10
               Caption = 'Legt die Zeiten fest, in denen je nach Einsatzart kein Ton ausgegeben werden soll.'#13#10'Beispiel für Nachtruhe von 21:30 Uhr - 7:10 Uhr bei Einsätzen ohne Feuerwehr: 21 | 30 | 07 | 10 |   |   | ☑ | ☑ | ☑  '
               ParentColor = False
             end
             object SG_Zeitkriterien: TStringGrid
-              Left = 14
-              Height = 164
+              AnchorSideLeft.Control = GroupBox5
+              AnchorSideTop.Control = Label16
+              AnchorSideTop.Side = asrBottom
+              AnchorSideRight.Control = GroupBox5
+              AnchorSideRight.Side = asrBottom
+              AnchorSideBottom.Control = GroupBox5
+              AnchorSideBottom.Side = asrBottom
+              Left = 0
+              Height = 221
               Hint = 'Entfernen drücken, um selektierte Zeile zu löschen'
-              Top = 64
-              Width = 656
+              Top = 50
+              Width = 680
               Align = alCustom
               Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Top = 10
               ColCount = 9
               Columns = <              
                 item
@@ -1179,40 +1351,62 @@ object Frm_Main: TFrm_Main
             end
           end
           object GroupBox3: TGroupBox
+            AnchorSideLeft.Control = TB_Sound
+            AnchorSideTop.Control = TB_Sound
+            AnchorSideRight.Control = TB_Sound
+            AnchorSideRight.Side = asrBottom
             Left = 0
-            Height = 96
+            Height = 100
             Top = 0
             Width = 684
-            Align = alCustom
             Anchors = [akTop, akLeft, akRight]
             Caption = 'Allgemein'
-            ClientHeight = 76
+            ClientHeight = 80
             ClientWidth = 680
             TabOrder = 1
             object CB_Play_Gong: TCheckBox
-              Left = 14
+              AnchorSideLeft.Control = GroupBox3
+              AnchorSideTop.Control = GroupBox3
+              Left = 10
               Height = 19
-              Top = 8
+              Top = 10
               Width = 134
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 10
               Caption = 'Alarmgong ausgeben'
               OnChange = CB_Play_GongChange
               TabOrder = 0
             end
             object CB_Play_Sound: TCheckBox
-              Left = 14
+              AnchorSideLeft.Control = GroupBox3
+              AnchorSideTop.Control = CB_Play_Gong
+              Left = 10
               Height = 19
               Top = 40
               Width = 232
+              BorderSpacing.Left = 10
+              BorderSpacing.Top = 30
               Caption = 'Alarmansage/Text-To-Speech ausgeben'
               OnChange = CB_Play_SoundChange
               TabOrder = 1
             end
             object TB_TTS: TToggleBox
-              Left = 304
-              Height = 51
+              AnchorSideLeft.Control = GroupBox3
+              AnchorSideTop.Control = GroupBox3
+              AnchorSideRight.Control = GroupBox3
+              AnchorSideRight.Side = asrBottom
+              AnchorSideBottom.Control = GroupBox3
+              AnchorSideBottom.Side = asrBottom
+              Left = 350
+              Height = 60
               Hint = 'Sprachausgabe nur ab Windows 8 in deutscher Sprache!'
-              Top = 8
-              Width = 283
+              Top = 10
+              Width = 320
+              Anchors = [akTop, akLeft, akRight, akBottom]
+              BorderSpacing.Left = 350
+              BorderSpacing.Top = 10
+              BorderSpacing.Right = 10
+              BorderSpacing.Bottom = 10
               Caption = 'Text-To-Speech Funktion ist deaktiviert'
               OnChange = TB_TTSChange
               ParentShowHint = False
@@ -1223,15 +1417,22 @@ object Frm_Main: TFrm_Main
         end
         object TB_Sonstiges: TTabSheet
           Caption = 'Sonstige Einstellungen'
-          ClientHeight = 366
+          ClientHeight = 391
           ClientWidth = 684
           object Memo_EM_TTS: TMemo
+            AnchorSideLeft.Control = TB_Sonstiges
+            AnchorSideTop.Control = Label17
+            AnchorSideTop.Side = asrBottom
+            AnchorSideRight.Control = TB_Sonstiges
+            AnchorSideRight.Side = asrBottom
+            AnchorSideBottom.Control = TB_Sonstiges
+            AnchorSideBottom.Side = asrBottom
             Left = 0
-            Height = 286
-            Top = 80
+            Height = 326
+            Top = 65
             Width = 684
-            Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
+            BorderSpacing.Top = 10
             Lines.Strings = (
               '10==ELW'
               '11==ELW'
@@ -1276,10 +1477,14 @@ object Frm_Main: TFrm_Main
             WordWrap = False
           end
           object Label17: TLabel
-            Left = 16
+            AnchorSideLeft.Control = TB_Sonstiges
+            AnchorSideTop.Control = TB_Sonstiges
+            Left = 10
             Height = 45
-            Top = 16
+            Top = 10
             Width = 558
+            BorderSpacing.Left = 10
+            BorderSpacing.Top = 10
             Caption = 'Einsatzmittel-Ersetzungen:'#13#10'Für die Ausgabe der Einsatzmittel über TTS (Text-to-Speech) können Funkrufnamen ausgetauscht werden.'#13#10'Beispiel: Nummer 01/82-01 als NEF 1 ausgeben -> 82==NEF'
             ParentColor = False
           end
@@ -1288,12 +1493,12 @@ object Frm_Main: TFrm_Main
     end
     object TB_Chronik: TTabSheet
       Caption = 'Alarmchronik'
-      ClientHeight = 394
+      ClientHeight = 419
       ClientWidth = 692
       ImageIndex = 1
       object Memo_Chronik: TMemo
         Left = 0
-        Height = 394
+        Height = 419
         Top = 0
         Width = 692
         Align = alClient
@@ -1305,12 +1510,12 @@ object Frm_Main: TFrm_Main
     end
     object TB_Log: TTabSheet
       Caption = 'Anwendungs-Log'
-      ClientHeight = 394
+      ClientHeight = 419
       ClientWidth = 692
       ImageIndex = 10
       object Memo_Log: TMemo
         Left = 0
-        Height = 394
+        Height = 419
         Top = 0
         Width = 692
         Align = alClient

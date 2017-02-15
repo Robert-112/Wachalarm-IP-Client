@@ -8,6 +8,9 @@
       <Title Value="Wachalarm-IP - Client"/>
       <ResourceType Value="res"/>
       <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
       <Icon Value="0"/>
     </General>
     <i18n>
@@ -18,6 +21,8 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="2"/>
       <MinorVersionNr Value="8"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="3"/>
       <Language Value="0407"/>
       <StringTable ProductVersion=""/>
     </VersionInfo>
@@ -53,8 +58,9 @@
         <ComponentName Value="Frm_Main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="331"/>
-        <CursorPos X="55" Y="368"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="783"/>
+        <CursorPos X="61" Y="800"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -99,14 +105,13 @@
       <Unit6>
         <Filename Value="FTPThread.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
         <CursorPos X="63" Y="13"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit6>
     </Units>
-    <JumpHistory Count="20" HistoryIndex="19">
+    <JumpHistory Count="23" HistoryIndex="22">
       <Position1>
         <Filename Value="Main.pas"/>
         <Caret Line="398" Column="79" TopLine="368"/>
@@ -187,6 +192,18 @@
         <Filename Value="Main.pas"/>
         <Caret Line="154" Column="45" TopLine="128"/>
       </Position20>
+      <Position21>
+        <Filename Value="Main.pas"/>
+        <Caret Line="368" Column="55" TopLine="331"/>
+      </Position21>
+      <Position22>
+        <Filename Value="Main.pas"/>
+        <Caret Line="369" Column="55"/>
+      </Position22>
+      <Position23>
+        <Filename Value="Main.pas"/>
+        <Caret Line="371" Column="55" TopLine="303"/>
+      </Position23>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>

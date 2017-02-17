@@ -31,3 +31,4 @@ _ressourcen/
 
 # Application bundle for Mac OS
 *.app/
+*.res

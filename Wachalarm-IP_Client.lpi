@@ -70,7 +70,6 @@
         <ComponentName Value="Frm_Anzeige"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
         <TopLine Value="13"/>
         <CursorPos X="43" Y="46"/>
@@ -91,8 +90,10 @@
       <Unit4>
         <Filename Value="Funktionen.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="25" Y="11"/>
+        <TopLine Value="114"/>
+        <CursorPos X="5" Y="191"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit4>

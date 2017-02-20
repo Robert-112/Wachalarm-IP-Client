@@ -139,8 +139,8 @@ begin
   // Uhrzeit setzen
   Frm_Anzeige.L_Clock.Caption := FormatDateTime('hh:nn:ss', now);
   // Datum setzen, falls Verbindung Okay
-  if Connect_Error < 6 then
-  begin
+  {if Connect_Error < 6 then
+  begin}
     if Frm_Anzeige.L_LongDate.Caption <> FormatDateTime('dddd, d. mmmm', now) then
     begin
       Frm_Anzeige.L_LongDate.Caption := FormatDateTime('dddd, d. mmmm', now);
@@ -148,7 +148,7 @@ begin
       L_LongDate.AdjustFontForOptimalFill;
       L_LongDate.AdjustSize;
     end;
-  end
+  {end
   else
   // sonst Fehlermeldung anzeigen
   begin
@@ -156,7 +156,7 @@ begin
     Frm_Anzeige.L_LongDate.Font.Color := clRed;
     L_LongDate.AdjustFontForOptimalFill;
     L_LongDate.AdjustSize;
-  end;
+  end;}
 end;
 
 procedure TFrm_Anzeige.Nur_Zeit_anzeigen;
@@ -217,8 +217,8 @@ procedure TFrm_Anzeige.DoPing;
 begin
   // Ping-Timer erhöhen, damit Ping nur alle 10 Sekunden ausgeführt wird
   Ping_Timer := Ping_Timer + 1;
-  // Ping alle 10 Sekunden
-  if (Ping_Timer = 10) then
+  // Ping alle 30 Sekunden
+  if (Ping_Timer = 30) then
   begin
     // aber nur falls Server-IP bekannt
     if not (Frm_Main.L_Server_IP.Caption = '') and not (Frm_Main.L_Server_IP.Caption = 'unbekannt') then

@@ -58,8 +58,9 @@
         <ComponentName Value="Frm_Main"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="379"/>
-        <CursorPos X="43" Y="396"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="332"/>
+        <CursorPos Y="371"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -70,13 +71,10 @@
         <ComponentName Value="Frm_Anzeige"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="290"/>
-        <CursorPos X="40" Y="220"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="289"/>
+        <CursorPos X="12" Y="302"/>
         <UsageCount Value="210"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="Splash.pas"/>
@@ -91,9 +89,9 @@
       <Unit4>
         <Filename Value="Funktionen.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="2"/>
+        <EditorIndex Value="1"/>
         <TopLine Value="114"/>
-        <CursorPos X="5" Y="191"/>
+        <CursorPos X="63" Y="151"/>
         <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit4>
@@ -107,141 +105,56 @@
       <Unit6>
         <Filename Value="FTPThread.pas"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="-1"/>
         <TopLine Value="422"/>
         <CursorPos X="63" Y="13"/>
         <UsageCount Value="30"/>
-        <Loaded Value="True"/>
       </Unit6>
     </Units>
-    <JumpHistory Count="30" HistoryIndex="29">
+    <JumpHistory Count="9" HistoryIndex="8">
       <Position1>
         <Filename Value="Main.pas"/>
         <Caret Line="396" Column="31" TopLine="345"/>
       </Position1>
       <Position2>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="207" Column="19" TopLine="166"/>
-      </Position2>
-      <Position3>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="208" Column="19" TopLine="166"/>
-      </Position3>
-      <Position4>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="213" Column="19" TopLine="166"/>
-      </Position4>
-      <Position5>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="214" Column="19" TopLine="166"/>
-      </Position5>
-      <Position6>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="304" Column="40" TopLine="242"/>
-      </Position6>
-      <Position7>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="35" Column="21"/>
-      </Position7>
-      <Position8>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="52" Column="31"/>
-      </Position8>
-      <Position9>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="141" Column="32" TopLine="108"/>
-      </Position9>
-      <Position10>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="170" Column="64" TopLine="108"/>
-      </Position10>
-      <Position11>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="151" Column="37" TopLine="121"/>
-      </Position11>
-      <Position12>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="170" Column="64" TopLine="121"/>
-      </Position12>
-      <Position13>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="183" Column="72" TopLine="121"/>
-      </Position13>
-      <Position14>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="188" Column="70" TopLine="126"/>
-      </Position14>
-      <Position15>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="204" Column="19" TopLine="142"/>
-      </Position15>
-      <Position16>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="205" Column="19" TopLine="143"/>
-      </Position16>
-      <Position17>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="206" Column="19" TopLine="144"/>
-      </Position17>
-      <Position18>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="207" Column="19" TopLine="145"/>
-      </Position18>
-      <Position19>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="208" Column="19" TopLine="146"/>
-      </Position19>
-      <Position20>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="213" Column="19" TopLine="151"/>
-      </Position20>
-      <Position21>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="214" Column="19" TopLine="152"/>
-      </Position21>
-      <Position22>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="304" Column="40" TopLine="242"/>
-      </Position22>
-      <Position23>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="35" Column="21"/>
-      </Position23>
-      <Position24>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="52" Column="31"/>
-      </Position24>
-      <Position25>
         <Filename Value="Main.pas"/>
         <Caret Line="396" Column="17"/>
-      </Position25>
-      <Position26>
+      </Position2>
+      <Position3>
         <Filename Value="Main.pas"/>
         <Caret Line="332" Column="57" TopLine="271"/>
-      </Position26>
-      <Position27>
+      </Position3>
+      <Position4>
         <Filename Value="Main.pas"/>
         <Caret Line="396" Column="19" TopLine="334"/>
-      </Position27>
-      <Position28>
+      </Position4>
+      <Position5>
         <Filename Value="Main.pas"/>
         <Caret Line="407" Column="41" TopLine="345"/>
-      </Position28>
-      <Position29>
+      </Position5>
+      <Position6>
         <Filename Value="Main.pas"/>
         <Caret Line="396" Column="43" TopLine="379"/>
-      </Position29>
-      <Position30>
-        <Filename Value="Anzeige.pas"/>
-        <Caret Line="152" Column="39" TopLine="106"/>
-      </Position30>
+      </Position6>
+      <Position7>
+        <Filename Value="Main.pas"/>
+        <Caret Line="371" TopLine="326"/>
+      </Position7>
+      <Position8>
+        <Filename Value="Main.pas"/>
+        <Caret Line="9" Column="42"/>
+      </Position8>
+      <Position9>
+        <Filename Value="Main.pas"/>
+        <Caret Line="362" Column="27" TopLine="332"/>
+      </Position9>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="Wachalarm-IP-Client"/>
+      <Filename Value="Wachalarm-IP-Client_$(TargetOS)"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>

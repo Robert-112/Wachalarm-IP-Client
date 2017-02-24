@@ -6,7 +6,7 @@ interface
 
 uses
   {$IFDEF WINDOWS}
-    comobj, ActiveX, ShellApi,
+    comobj, ActiveX, ShellApi, win32proc,
   {$ELSE}
     asyncprocess, process,
   {$ENDIF}
@@ -336,14 +336,36 @@ begin
   end;
   // Informationen zum Betriebssystem sammeln
   OS := 'unknown';
-  {$IFDEF WIN32}
-    OS := 'Windows x86';
-  {$ENDIF}
-  {$IFDEF WIN64}
-    OS := 'Windows x64';
+  {$IFDEF LCLcarbon}
+    OS := 'Mac OS X 10.';
   {$ENDIF}
   {$IFDEF LINUX}
-      OS := 'Linux';
+    OS := 'Linux Kernel';
+  {$ENDIF}
+  {$IFDEF UNIX}
+    OS := 'Unix';
+  {$ENDIF}
+  {$IFDEF WINDOWS}
+    if WindowsVersion = wv2000 then OS := 'Windows 2000'
+      else if WindowsVersion = wvXP then OS := 'Windows XP'
+      else if WindowsVersion = wvVista then OS := 'Windows Vista'
+      else if WindowsVersion = wv7 then OS := 'Windows 7'
+      else if WindowsVersion = wv8 then OS := 'Windows 8'
+      else if WindowsVersion = wv8_1 then OS := 'Windows 8.1'
+      else if WindowsVersion = wv10 then OS := 'Windows 10'
+      else OS := 'Windows';
+  {$ENDIF}
+  {$IFDEF WIN32}
+    if OS <> 'unknown' then
+      OS := OS + ' x86'
+    else
+      OS := 'Windows x86';
+  {$ENDIF}
+  {$IFDEF WIN64}
+    if OS <> 'unknown' then
+      OS := OS + ' x64'
+    else
+      OS := 'Windows x64';
   {$ENDIF}
   // JSON für Version-Info erstellen
   App_Version := '{' +

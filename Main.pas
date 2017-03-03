@@ -222,7 +222,7 @@ begin
   DefaultFormatSettings.LongDayNames[2]:='Montag';
   DefaultFormatSettings.LongDayNames[3]:='Dienstag';
   DefaultFormatSettings.LongDayNames[4]:='Mittwoch';
-  DefaultFormatSettings.LongDayNames[5]:='Donnertag';
+  DefaultFormatSettings.LongDayNames[5]:='Donnerstag';
   DefaultFormatSettings.LongDayNames[6]:='Freitag';
   DefaultFormatSettings.LongDayNames[7]:='Samstag';
   DefaultFormatSettings.LongMonthNames[1]:='Januar';

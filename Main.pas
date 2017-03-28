@@ -269,8 +269,6 @@ begin
       ReWrite(EM_Replace, 1);
     end;
   CloseFile(EM_Replace);
-  // Datei mit Standard-Werten befüllen
-  Memo_EM_TTS.Lines.SaveToFile(Dir + Slash + 'em_replace.txt');
   // Alarmchronik erstellen/lesen
   if FileExists(Dir + Slash + 'chronik.txt') then
     begin
@@ -609,6 +607,18 @@ begin
     	  // Sound für Ordnungszahl setzen
     	  Sounds_to_Play := Sounds_to_Play + IntToStr(StrToInt(copy(Funkkenner, pos('83', Funkkenner) + 4, 1)) + 14) + ',';
     	end;
+      end
+      else
+      begin
+        // falls kein normiertes Einsatzmittel ist, schauen ob hierfür eine Ersetzung hinterlegt ist
+        for i := 0 to Memo_EM_TTS.Lines.Count - 1 do
+        begin
+          if Copy(Memo_EM_TTS.Lines[i], 0, pos('==',Memo_EM_TTS.Lines[i]) - 1) = Funkkenner then
+          begin
+            Funkkenner_unbekannt := false;
+            Text_to_Play := Text_to_Play + Copy(Memo_EM_TTS.Lines[i], pos('==', Memo_EM_TTS.Lines[i]) + 2, 100) + ';';
+          end;
+        end;
       end;
       // Wenn Einsatzmitteltyp nicht hinterlegt, dann Funkkenner duchsagen
       if Funkkenner_unbekannt = true then

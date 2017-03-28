@@ -5,7 +5,7 @@ object Frm_Main: TFrm_Main
   Width = 700
   BorderIcons = [biSystemMenu]
   Caption = 'Wachalarm-IP - Client'
-  ClientHeight = 485
+  ClientHeight = 480
   ClientWidth = 700
   Icon.Data = {
     BE1000000000010001002020000001002000A810000016000000280000002000
@@ -153,8 +153,8 @@ object Frm_Main: TFrm_Main
   LCLVersion = '1.6.2.0'
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 23
-    Top = 462
+    Height = 29
+    Top = 451
     Width = 700
     Panels = <    
       item
@@ -165,7 +165,7 @@ object Frm_Main: TFrm_Main
   end
   object PC_Main: TPageControl
     Left = 0
-    Height = 462
+    Height = 451
     Top = 0
     Width = 700
     ActivePage = TB_Info
@@ -175,7 +175,7 @@ object Frm_Main: TFrm_Main
     TabOrder = 1
     object TB_Info: TTabSheet
       Caption = 'Information'
-      ClientHeight = 419
+      ClientHeight = 408
       ClientWidth = 692
       ImageIndex = 6
       object GroupBox1: TGroupBox
@@ -187,21 +187,21 @@ object Frm_Main: TFrm_Main
         AnchorSideBottom.Control = TB_Info
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 219
+        Height = 208
         Top = 200
         Width = 692
         Anchors = [akTop, akLeft, akRight, akBottom]
         Caption = 'Systemstatus'
-        ClientHeight = 199
+        ClientHeight = 183
         ClientWidth = 688
         TabOrder = 0
         object Label2: TLabel
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = GroupBox1
           Left = 10
-          Height = 15
+          Height = 20
           Top = 10
-          Width = 96
+          Width = 120
           BorderSpacing.Left = 10
           BorderSpacing.Top = 10
           Caption = 'Lokale IP-Adresse:'
@@ -211,9 +211,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label2
           AnchorSideTop.Control = GroupBox1
           Left = 150
-          Height = 15
+          Height = 20
           Top = 10
-          Width = 72
+          Width = 90
           BorderSpacing.Left = 140
           BorderSpacing.Top = 10
           Caption = '<IP-Adresse>'
@@ -223,9 +223,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label2
           Left = 10
-          Height = 15
+          Height = 20
           Top = 40
-          Width = 94
+          Width = 118
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Server IP-Adresse:'
@@ -235,9 +235,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label5
           Left = 10
-          Height = 15
+          Height = 20
           Top = 70
-          Width = 95
+          Width = 117
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Ports / Protokolle:'
@@ -247,9 +247,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label12
           AnchorSideTop.Control = L_Server_IP
           Left = 150
-          Height = 15
+          Height = 20
           Top = 70
-          Width = 214
+          Width = 267
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = '60132 UDP; 60143 TCP; 60144 TCP; ICMP;'
@@ -259,9 +259,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label5
           AnchorSideTop.Control = L_Local_IP
           Left = 150
-          Height = 15
+          Height = 20
           Top = 40
-          Width = 57
+          Width = 69
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -271,9 +271,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label15
           Left = 10
-          Height = 15
+          Height = 20
           Top = 130
-          Width = 70
+          Width = 89
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'letzter Alarm:'
@@ -283,9 +283,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label6
           AnchorSideTop.Control = L_LastServerMsg
           Left = 150
-          Height = 15
+          Height = 20
           Top = 130
-          Width = 57
+          Width = 69
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -295,9 +295,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label12
           Left = 10
-          Height = 15
+          Height = 20
           Top = 100
-          Width = 103
+          Width = 128
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Server-Information:'
@@ -307,9 +307,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label15
           AnchorSideTop.Control = Label14
           Left = 150
-          Height = 15
+          Height = 20
           Top = 100
-          Width = 57
+          Width = 69
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -327,16 +327,16 @@ object Frm_Main: TFrm_Main
         Width = 692
         Anchors = [akTop, akLeft, akRight]
         Caption = 'Programminformationen'
-        ClientHeight = 180
+        ClientHeight = 175
         ClientWidth = 688
         TabOrder = 1
         object Label8: TLabel
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = GroupBox4
           Left = 10
-          Height = 15
+          Height = 20
           Top = 75
-          Width = 41
+          Width = 51
           BorderSpacing.Left = 10
           BorderSpacing.Top = 75
           Caption = 'Version:'
@@ -346,12 +346,12 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label8
           AnchorSideTop.Control = GroupBox4
           Left = 100
-          Height = 15
+          Height = 20
           Top = 75
-          Width = 58
+          Width = 72
           BorderSpacing.Left = 90
           BorderSpacing.Top = 75
-          Caption = 'Client 2.8.2'
+          Caption = 'Client 2.8.3'
           ParentColor = False
         end
         object Image1: TImage
@@ -818,9 +818,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = Label8
           Left = 10
-          Height = 15
+          Height = 20
           Top = 105
-          Width = 57
+          Width = 70
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Entwickler:'
@@ -830,9 +830,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label13
           AnchorSideTop.Control = L_Version
           Left = 100
-          Height = 15
+          Height = 20
           Top = 105
-          Width = 171
+          Width = 217
           BorderSpacing.Left = 90
           BorderSpacing.Top = 30
           Caption = 'Leitstelle Lausitz - Robert Richter'
@@ -842,9 +842,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = Label13
           Left = 10
-          Height = 15
+          Height = 20
           Top = 135
-          Width = 51
+          Width = 64
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Webseite:'
@@ -855,9 +855,9 @@ object Frm_Main: TFrm_Main
           AnchorSideTop.Control = Label3
           Cursor = crHandPoint
           Left = 100
-          Height = 15
+          Height = 20
           Top = 135
-          Width = 281
+          Width = 346
           BorderSpacing.Left = 90
           BorderSpacing.Top = 30
           Caption = 'https://github.com/Robert-112/Wachalarm-IP-Client'
@@ -901,7 +901,7 @@ object Frm_Main: TFrm_Main
             Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Anzeige'
-            ClientHeight = 371
+            ClientHeight = 366
             ClientWidth = 680
             TabOrder = 0
             object CB_Show_Alarmbild: TCheckBox
@@ -1091,7 +1091,7 @@ object Frm_Main: TFrm_Main
             Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Einschränkungen (Nachtruhe)'
-            ClientHeight = 271
+            ClientHeight = 266
             ClientWidth = 680
             TabOrder = 0
             object Label16: TLabel
@@ -1361,7 +1361,7 @@ object Frm_Main: TFrm_Main
             Width = 684
             Anchors = [akTop, akLeft, akRight]
             Caption = 'Allgemein'
-            ClientHeight = 80
+            ClientHeight = 75
             ClientWidth = 680
             TabOrder = 1
             object CB_Play_Gong: TCheckBox

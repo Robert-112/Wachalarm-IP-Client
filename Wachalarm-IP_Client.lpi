@@ -59,8 +59,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="218"/>
-        <CursorPos X="50" Y="225"/>
+        <TopLine Value="584"/>
+        <CursorPos X="11" Y="611"/>
         <UsageCount Value="210"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -111,7 +111,7 @@
         <UsageCount Value="30"/>
       </Unit6>
     </Units>
-    <JumpHistory Count="9" HistoryIndex="8">
+    <JumpHistory Count="10" HistoryIndex="9">
       <Position1>
         <Filename Value="Main.pas"/>
         <Caret Line="396" Column="31" TopLine="345"/>
@@ -148,6 +148,10 @@
         <Filename Value="Main.pas"/>
         <Caret Line="362" Column="27" TopLine="332"/>
       </Position9>
+      <Position10>
+        <Filename Value="Main.pas"/>
+        <Caret Line="611" Column="7" TopLine="575"/>
+      </Position10>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
@@ -163,17 +167,11 @@
     </SearchPaths>
     <CodeGeneration>
       <SmartLinkUnit Value="True"/>
-      <Checks>
-        <IOChecks Value="True"/>
-        <RangeChecks Value="True"/>
-        <OverflowChecks Value="True"/>
-        <StackChecks Value="True"/>
-      </Checks>
     </CodeGeneration>
     <Linking>
       <Debugging>
+        <GenerateDebugInfo Value="False"/>
         <DebugInfoType Value="dsStabs"/>
-        <UseHeaptrc Value="True"/>
         <UseValgrind Value="True"/>
         <StripSymbols Value="True"/>
       </Debugging>

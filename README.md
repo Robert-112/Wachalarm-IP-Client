@@ -64,7 +64,9 @@ Beispiel für Nachtruhe von 21:30 Uhr - 7:10 Uhr bei Einsätzen ohne Feuerwehr:
 |21|30|07|10|:black_square_button:|:black_square_button:|:white_square_button:|:white_square_button:|:white_square_button:|
 ### Sonstige Einstellungen
 Für die Ansage des Alarmtextes mittels TTS (Text-To-Speech) können hier die gesprochenen Funkrufnamen der Einsatzmittel ausgetauscht werden. Jede Zeile steht für einen neuen Eintrag.
-Beispiel um das Einsatzmittel mit der Nummer 01/82-01 als *"NEF 1"* anzusagen:>82==NEF
+Beispiel um das Einsatzmittel mit der Nummer 01/82-01 als *"NEF 1"* anzusagen:
+>82==NEF
+
 ### Programm beenden
 Die Anwendung wird über den Dialog *"Beenden"* (Rechtsklick auf das Tray-Icon) geschlossen.
 

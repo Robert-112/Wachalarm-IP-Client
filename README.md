@@ -1,5 +1,7 @@
 # Wachalarm-IP-Client
 
+![Logo Wachalarm-IP-Client](https://user-images.githubusercontent.com/19272095/47460397-af62cf00-d7de-11e8-8809-7a181ea50040.png)
+
 Hier wird der Quellcode der Client-Anwendung des Wachalarm-IP der Leitstelle Lausitz veröffentlicht.
 Die Anwendung wurde mit [Lazarus](https://www.lazarus-ide.org/) programmiert und **kann nicht ohne den Wachalarm-IP-Server betrieben werden**.
 Der Wachalarm-IP-Server wird dabei i.d.R. durch die einsatzführende Leitstelle betrieben. Er übersendet die Einsatzdaten an die Clients.

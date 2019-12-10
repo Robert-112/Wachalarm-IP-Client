@@ -591,6 +591,12 @@ begin
             else
               Text_to_Play := Text_to_Play + Copy(Memo_EM_TTS.Lines[i], pos('==', Memo_EM_TTS.Lines[i]) + 2, 100) + ' ' + Einsatzmittel_Nr + ';';
           end;
+          // vollständigen Funkkenner mit gesprochenem Namen ersetzen, falls vorhanden
+          if Copy(Memo_EM_TTS.Lines[i], 0, pos('==',Memo_EM_TTS.Lines[i]) - 1) = Funkkenner then
+          begin
+            Funkkenner_unbekannt := false;
+            Text_to_Play := Text_to_Play + Copy(Memo_EM_TTS.Lines[i], pos('==', Memo_EM_TTS.Lines[i]) + 2, 100) + ';';
+          end;
         end;
     	// Für NEF und RTW alternativ Ansagen aus der Resource hinterlegen
     	if Einsatzmitteltyp = '82' then

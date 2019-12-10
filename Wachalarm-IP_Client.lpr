@@ -11,7 +11,7 @@ uses
 {$R *.res}
 
 begin
-  Application.Title := 'Wachalarm-IP - Client';
+  Application.Title:='Wachalarm-IP - Client';
   Application.Initialize;
   Application.CreateForm(TFrm_Splash, Frm_Splash);
   Frm_Splash.ShowModal;

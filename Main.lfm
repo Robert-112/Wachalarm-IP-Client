@@ -1,11 +1,11 @@
 object Frm_Main: TFrm_Main
-  Left = 444
+  Left = 453
   Height = 505
-  Top = 586
+  Top = 472
   Width = 700
   BorderIcons = [biSystemMenu]
   Caption = 'Wachalarm-IP - Client'
-  ClientHeight = 480
+  ClientHeight = 485
   ClientWidth = 700
   Icon.Data = {
     BE1000000000010001002020000001002000A810000016000000280000002000
@@ -150,11 +150,11 @@ object Frm_Main: TFrm_Main
   OnDblClick = FormDblClick
   Position = poScreenCenter
   ShowInTaskBar = stNever
-  LCLVersion = '1.6.2.0'
+  LCLVersion = '2.0.2.0'
   object StatusBar1: TStatusBar
     Left = 0
-    Height = 29
-    Top = 451
+    Height = 23
+    Top = 462
     Width = 700
     Panels = <    
       item
@@ -165,7 +165,7 @@ object Frm_Main: TFrm_Main
   end
   object PC_Main: TPageControl
     Left = 0
-    Height = 451
+    Height = 462
     Top = 0
     Width = 700
     ActivePage = TB_Info
@@ -175,7 +175,7 @@ object Frm_Main: TFrm_Main
     TabOrder = 1
     object TB_Info: TTabSheet
       Caption = 'Information'
-      ClientHeight = 408
+      ClientHeight = 419
       ClientWidth = 692
       ImageIndex = 6
       object GroupBox1: TGroupBox
@@ -187,21 +187,21 @@ object Frm_Main: TFrm_Main
         AnchorSideBottom.Control = TB_Info
         AnchorSideBottom.Side = asrBottom
         Left = 0
-        Height = 208
+        Height = 219
         Top = 200
         Width = 692
         Anchors = [akTop, akLeft, akRight, akBottom]
         Caption = 'Systemstatus'
-        ClientHeight = 183
+        ClientHeight = 199
         ClientWidth = 688
         TabOrder = 0
         object Label2: TLabel
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = GroupBox1
           Left = 10
-          Height = 20
+          Height = 15
           Top = 10
-          Width = 120
+          Width = 96
           BorderSpacing.Left = 10
           BorderSpacing.Top = 10
           Caption = 'Lokale IP-Adresse:'
@@ -211,9 +211,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label2
           AnchorSideTop.Control = GroupBox1
           Left = 150
-          Height = 20
+          Height = 15
           Top = 10
-          Width = 90
+          Width = 72
           BorderSpacing.Left = 140
           BorderSpacing.Top = 10
           Caption = '<IP-Adresse>'
@@ -223,9 +223,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label2
           Left = 10
-          Height = 20
+          Height = 15
           Top = 40
-          Width = 118
+          Width = 94
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Server IP-Adresse:'
@@ -235,9 +235,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label5
           Left = 10
-          Height = 20
+          Height = 15
           Top = 70
-          Width = 117
+          Width = 95
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Ports / Protokolle:'
@@ -247,9 +247,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label12
           AnchorSideTop.Control = L_Server_IP
           Left = 150
-          Height = 20
+          Height = 15
           Top = 70
-          Width = 267
+          Width = 212
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = '60132 UDP; 60143 TCP; 60144 TCP; ICMP;'
@@ -259,9 +259,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label5
           AnchorSideTop.Control = L_Local_IP
           Left = 150
-          Height = 20
+          Height = 15
           Top = 40
-          Width = 69
+          Width = 57
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -271,9 +271,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label15
           Left = 10
-          Height = 20
+          Height = 15
           Top = 130
-          Width = 89
+          Width = 70
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'letzter Alarm:'
@@ -283,9 +283,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label6
           AnchorSideTop.Control = L_LastServerMsg
           Left = 150
-          Height = 20
+          Height = 15
           Top = 130
-          Width = 69
+          Width = 57
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -295,9 +295,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox1
           AnchorSideTop.Control = Label12
           Left = 10
-          Height = 20
+          Height = 15
           Top = 100
-          Width = 128
+          Width = 103
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Server-Information:'
@@ -307,9 +307,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label15
           AnchorSideTop.Control = Label14
           Left = 150
-          Height = 20
+          Height = 15
           Top = 100
-          Width = 69
+          Width = 57
           BorderSpacing.Left = 140
           BorderSpacing.Top = 30
           Caption = 'unbekannt'
@@ -327,16 +327,16 @@ object Frm_Main: TFrm_Main
         Width = 692
         Anchors = [akTop, akLeft, akRight]
         Caption = 'Programminformationen'
-        ClientHeight = 175
+        ClientHeight = 180
         ClientWidth = 688
         TabOrder = 1
         object Label8: TLabel
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = GroupBox4
           Left = 10
-          Height = 20
+          Height = 15
           Top = 75
-          Width = 51
+          Width = 41
           BorderSpacing.Left = 10
           BorderSpacing.Top = 75
           Caption = 'Version:'
@@ -346,12 +346,12 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label8
           AnchorSideTop.Control = GroupBox4
           Left = 100
-          Height = 20
+          Height = 15
           Top = 75
-          Width = 72
+          Width = 58
           BorderSpacing.Left = 90
           BorderSpacing.Top = 75
-          Caption = 'Client 2.8.3'
+          Caption = 'Client 2.8.4'
           ParentColor = False
         end
         object Image1: TImage
@@ -818,9 +818,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = Label8
           Left = 10
-          Height = 20
+          Height = 15
           Top = 105
-          Width = 70
+          Width = 57
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Entwickler:'
@@ -830,9 +830,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = Label13
           AnchorSideTop.Control = L_Version
           Left = 100
-          Height = 20
+          Height = 15
           Top = 105
-          Width = 217
+          Width = 171
           BorderSpacing.Left = 90
           BorderSpacing.Top = 30
           Caption = 'Leitstelle Lausitz - Robert Richter'
@@ -842,9 +842,9 @@ object Frm_Main: TFrm_Main
           AnchorSideLeft.Control = GroupBox4
           AnchorSideTop.Control = Label13
           Left = 10
-          Height = 20
+          Height = 15
           Top = 135
-          Width = 64
+          Width = 51
           BorderSpacing.Left = 10
           BorderSpacing.Top = 30
           Caption = 'Webseite:'
@@ -855,9 +855,9 @@ object Frm_Main: TFrm_Main
           AnchorSideTop.Control = Label3
           Cursor = crHandPoint
           Left = 100
-          Height = 20
+          Height = 15
           Top = 135
-          Width = 346
+          Width = 281
           BorderSpacing.Left = 90
           BorderSpacing.Top = 30
           Caption = 'https://github.com/Robert-112/Wachalarm-IP-Client'
@@ -901,7 +901,7 @@ object Frm_Main: TFrm_Main
             Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Anzeige'
-            ClientHeight = 366
+            ClientHeight = 371
             ClientWidth = 680
             TabOrder = 0
             object CB_Show_Alarmbild: TCheckBox
@@ -938,7 +938,7 @@ object Frm_Main: TFrm_Main
               Left = 10
               Height = 19
               Top = 215
-              Width = 201
+              Width = 200
               BorderSpacing.Left = 10
               BorderSpacing.Top = 40
               Caption = 'Alarm als PopUp im Tray anzeigen'
@@ -1091,7 +1091,7 @@ object Frm_Main: TFrm_Main
             Align = alCustom
             Anchors = [akTop, akLeft, akRight, akBottom]
             Caption = 'Einschränkungen (Nachtruhe)'
-            ClientHeight = 266
+            ClientHeight = 271
             ClientWidth = 680
             TabOrder = 0
             object Label16: TLabel
@@ -1361,7 +1361,7 @@ object Frm_Main: TFrm_Main
             Width = 684
             Anchors = [akTop, akLeft, akRight]
             Caption = 'Allgemein'
-            ClientHeight = 75
+            ClientHeight = 80
             ClientWidth = 680
             TabOrder = 1
             object CB_Play_Gong: TCheckBox
@@ -1428,8 +1428,8 @@ object Frm_Main: TFrm_Main
             AnchorSideBottom.Control = TB_Sonstiges
             AnchorSideBottom.Side = asrBottom
             Left = 0
-            Height = 326
-            Top = 65
+            Height = 266
+            Top = 125
             Width = 684
             Anchors = [akTop, akLeft, akRight, akBottom]
             BorderSpacing.Top = 10
@@ -1480,12 +1480,12 @@ object Frm_Main: TFrm_Main
             AnchorSideLeft.Control = TB_Sonstiges
             AnchorSideTop.Control = TB_Sonstiges
             Left = 10
-            Height = 45
+            Height = 105
             Top = 10
-            Width = 558
+            Width = 580
             BorderSpacing.Left = 10
             BorderSpacing.Top = 10
-            Caption = 'Einsatzmittel-Ersetzungen:'#13#10'Für die Ausgabe der Einsatzmittel über TTS (Text-to-Speech) können Funkrufnamen ausgetauscht werden.'#13#10'Beispiel: Nummer 01/82-01 als NEF 1 ausgeben -> 82==NEF'
+            Caption = 'Einsatzmittel-Ersetzungen:'#13#10'Für die Ausgabe der Einsatzmittel über TTS (Text-to-Speech) können Funkrufnamen ausgetauscht werden.'#13#10'Sie können entweder ein ganzes Einsatzmittel austauschen, oder einen Einsatzmitteltyp.'#13#10#13#10'Beispiel 1: Nummer 01/82-01 als NEF 1 ausgeben -> 82==NEF'#13#10'Beispiel 2: 02/43-01 als HLF 2 ausgeben -> 02/43-01==HLF 2'#13#10'(Achtung wenn ein spezielles Einsatzmittel ersetzt wird, sollte kein weiterer Einsatzmitteltyp hinterlegt werden!)'
             ParentColor = False
           end
         end
